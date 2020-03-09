@@ -12,12 +12,20 @@
 // //
 // // }
 // // alert( sum );
-function getRandomInRange(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+//Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива. (числа от 0 до 10)
+// function getRandomInRange(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// let arr=[];
+// arr.length=10;
+// for (let i=0; i<arr.length; i+=1){
+//     arr[i]=getRandomInRange(1,10);
+// }
+// alert(arr);
+//Given an array, rotate the array to the right by k steps, where k is non-negative.
+
+let abc = ['1','2','3','4','5','6', '7'];
+function rotate(nums, k){
+    return abc.slice(k).concat(nums.slice(0,k));
 }
-let arr=[];
-arr.length=10;
-for (let i=0; i<arr.length; i+=1){
-    arr[i]=getRandomInRange(1,10);
-}
-alert(arr);
+console.log( rotate(abc, 3) );
