@@ -24,8 +24,12 @@
 // alert(arr);
 //Given an array, rotate the array to the right by k steps, where k is non-negative.
 
-let abc = ['1','2','3','4','5','6', '7'];
-function rotate(nums, k){
-    return abc.slice(k).concat(nums.slice(0,k));
-}
-console.log( rotate(abc, 3) );
+// let abc = ['1','2','3','4','5','6', '7'];
+// function rotate(nums, k){
+//     return abc.slice(k).concat(nums.slice(0,k));
+// } //убрали 3 сначала (-) и присоединили к тому что вышло от 0 до к -от первого до к НЕ включительно
+// console.log( rotate(abc, 3) );
+
+// let abc = ['1','2','3','4','5','6','7'];
+// abc=abc.slice(3).concat(abc.slice(0,3));
+// console.log(abc);
