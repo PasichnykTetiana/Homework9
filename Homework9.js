@@ -4,15 +4,25 @@
 // let arr=[1,2,3];
 // arr.unshift(4,5,6);
 // alert(arr);
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9,10];
-// // var sum=0;
-// //
-// // for (let i = 0; i < arr.length; i+=1) {
-// //     sum=sum+arr[i]*arr[i];
-// //
-// // }
-// // alert( sum );
 //Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива. (числа от 0 до 10)
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var sum = 0;
+//
+// for ( i = 0; i < arr.length; i+=1) {
+//     sum=sum+arr[i]*arr[i];
+//
+// }
+// console.log(sum);
+
+// // Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива. (числа от 0 до 10) !!форич!!
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sum=0;
+
+arr.forEach(function (item, i, arr) {
+    sum=sum+arr[i]*arr[i]
+});
+alert( sum );
+//Заполните массив 10-ю случайными числами от 1 до 10 с помощью цикла.
 // function getRandomInRange(min, max) {
 //     return Math.floor(Math.random() * (max - min + 1)) + min;
 // }
@@ -33,3 +43,45 @@
 // let abc = ['1','2','3','4','5','6','7'];
 // abc=abc.slice(3).concat(abc.slice(0,3));
 // console.log(abc);
+// //разворот массива
+// function reverse(arr) {
+//
+//     var i;
+//
+//     for(i = 0; i < arr.length-1; i += 1) {
+//         arr.push(arr[0]);
+//         arr.shift();
+//         console.log(arr);
+//
+//     }
+//
+//
+//     return arr;
+// }
+//
+// console.log(reverse([1, 2, 3]));
+//поворот зеркально
+// function reverse(str) {
+//
+//     var newstr='', i;
+//
+//     for(i = 0; i < str.length+1; i += 1) {
+//     newstr+=str.charAt(str.length-i);
+//
+//     }
+//
+//
+//     return newstr;
+// }
+//
+// console.log(reverse('Привет'));
+//второй вариант
+// function reverseString(str) {
+//     var newString = "";
+//     for (var i = str.length - 1; i >= 0; i--) {
+//         newString += str[i]; //работает и без str.charat (берет по букве)
+//     }
+//     return newString;
+// }
+// console.log(reverseString('hello'));
+// console.log(typeof 7 === "number");
